@@ -29,7 +29,7 @@ void euler(double S[], double I[], double R[], double C[], double V[], double D[
         V[i + 1] = fmax(0, V[i] + dV * dt);
         D[i + 1] = fmax(0, D[i] + dD * dt);
 
-        // Stockage dans un fichier
+        
         fprintf(fp, "%lf %lf %lf %lf %lf %lf %lf %lf\n",
                 t, S[i + 1], I[i + 1], R[i + 1], C[i + 1], V[i + 1], D[i + 1],
                 S[i + 1] + I[i + 1] + R[i + 1] + C[i + 1] + V[i + 1] - D[i + 1]);
@@ -51,7 +51,7 @@ int main() {
     double pi     = 0.1;
     double population = 1.0; // Population totale initiale normalisée à 1
 
-    // Conditions initiales
+    
     S[0] = 0.6 * population;
     I[0] = 0.1 * population;
     R[0] = 0.0;

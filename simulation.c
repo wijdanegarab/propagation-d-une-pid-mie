@@ -49,7 +49,7 @@ int main() {
     double mu     = 0.05;
     double nu     = 10.0;
     double pi     = 0.1;
-    double population = 1.0; // Population totale initiale normalisée à 1
+    double population = 1.0; 
 
     
     S[0] = 0.6 * population;
